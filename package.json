@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@primevue/themes": "^4.2.5",
-    "@tailwindcss/vite": "^4.0.0",
     "axios": "^1.7.9",
     "primevue": "^4.2.5",
     "tailwindcss-primeui": "^0.4.0",

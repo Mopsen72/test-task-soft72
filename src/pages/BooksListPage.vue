@@ -1,10 +1,12 @@
+<template>
+  <div class="container mx-auto h-svh">
+
+  </div>
+</template>
+
 <script lang="ts" setup>
 
 </script>
-
-<template>
-
-</template>
 
 <style scoped>
 
