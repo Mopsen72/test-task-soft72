@@ -1,12 +1,12 @@
 <template>
   <nav class="flex justify-center gap-2">
-    <router-link to="books">Список книг</router-link>
-    <router-link to="me">об мне</router-link>
+    <Button as="router-link" label="Список книг" severity="secondary" to="books"></Button>
+    <Button as="router-link" label="Об мне" severity="secondary" to="me"></Button>
   </nav>
 </template>
 
 <script lang="ts" setup>
-
+import {Button} from "primevue";
 </script>
 
 
