@@ -1,7 +1,5 @@
 <template>
-  <div class="container mx-auto h-svh">
-
-  </div>
+  <main></main>
 </template>
 
 <script lang="ts" setup>
