@@ -1,11 +1,14 @@
 @tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
 * {
     scrollbar-width: auto;
     scrollbar-color: #969A9F #DFE9EB;
+}
+
+body {
+    margin: 0;
 }
 
 /* Chrome, Edge and Safari */
@@ -40,6 +43,9 @@
     background-color: #818285;
 }
 
+
+@tailwind components;
+@tailwind utilities;
 
 :root {
     background-color: #f5f6f9;
