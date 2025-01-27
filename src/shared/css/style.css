@@ -7,10 +7,6 @@
     scrollbar-color: #969A9F #DFE9EB;
 }
 
-body {
-    margin: 0;
-}
-
 /* Chrome, Edge and Safari */
 *::-webkit-scrollbar {
     height: 10px;
