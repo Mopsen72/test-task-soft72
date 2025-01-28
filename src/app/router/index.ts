@@ -13,7 +13,7 @@ const routes: RouteRecordRaw[] = [
                 component: async () => import("../../pages/BooksListPage.vue"),
                 children: [
                     {
-                        path: "/:bookId",
+                        path: ":bookId",
                         name: "books-id",
                         component: async () => import("../../pages/BookModalPage.vue")
                     }

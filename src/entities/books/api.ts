@@ -1,6 +1,6 @@
 import {axiosAppInstance} from "../../shared/utils/axiosInit.ts";
 import type {AxiosResponse} from "axios";
-import type {IBookGoogleAPI} from "./types.ts";
+import type {IBookGoogleAPI} from "./types.d.ts";
 
 export interface IGoogleAPIResponse {
     kind: string,

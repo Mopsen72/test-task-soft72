@@ -4,10 +4,11 @@ import App from './App.vue';
 import {router} from "./router";
 import PrimeVue from 'primevue/config';
 import {MyPreset} from "./primeTheme.ts";
+import ToastService from 'primevue/toastservice';
 
 
 createApp(App).use(router).use(PrimeVue, {
     theme: {
         preset: MyPreset,
     }
-}).mount('#app')
+}).use(ToastService).mount('#app')

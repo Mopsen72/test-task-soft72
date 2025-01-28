@@ -1,8 +1,8 @@
 <template>
-  <div class="container mx-auto h-svh">
-    <div class="sticky top-0 p-2">
+  <div class="container mx-auto h-svh relative">
+    <div class="sticky top-0 p-2 z-20">
       <NavigationPanel></NavigationPanel>
-      <ProgressBar :style="{visibility: loading? 'visible' :'hidden', height: '0.5rem'}"
+      <ProgressBar :style="{visibility: loading ? 'visible' :'hidden', height: '0.5rem'}"
                    mode="indeterminate"></ProgressBar>
     </div>
     <div>
@@ -12,12 +12,14 @@
         </transition>
       </router-view>
     </div>
+    <Toast/>
   </div>
 </template>
 
 <script lang="ts" setup>
 import NavigationPanel from "../widgets/NavigationPanel.vue";
 import ProgressBar from 'primevue/progressbar';
+import Toast from "primevue/toast";
 import {provide, ref} from "vue";
 import {loadingKey} from "../shared/injectionKeys/loadingKey.ts";
 

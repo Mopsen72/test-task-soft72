@@ -1,6 +1,7 @@
 <template>
   <main>
     <BooksListWidget></BooksListWidget>
+    <router-view></router-view>
   </main>
 </template>
 
