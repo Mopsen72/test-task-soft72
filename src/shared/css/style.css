@@ -1,0 +1,44 @@
+@tailwind base;
+
+
+/* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #969A9F #DFE9EB;
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+    height: 10px;
+    width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: #DFE9EB00;
+}
+
+*::-webkit-scrollbar-track:hover {
+    background-color: #B8C0C200;
+}
+
+*::-webkit-scrollbar-track:active {
+    background-color: #B8C0C200;
+}
+
+*::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #969A9F;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #8b8f93;
+}
+
+*::-webkit-scrollbar-thumb:active {
+    background-color: #818285;
+}
+
+
+@tailwind components;
+@tailwind utilities;
