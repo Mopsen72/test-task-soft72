@@ -18,9 +18,16 @@
 <script lang="ts" setup>
 import NavigationPanel from "../widgets/NavigationPanel.vue";
 import ProgressBar from 'primevue/progressbar';
-import {ref} from "vue";
+import {provide, ref} from "vue";
+import {loadingKey} from "../shared/injectionKeys/loadingKey.ts";
 
 const loading = ref<boolean>(false);
+
+const updateLoading = (value: boolean) => {
+  loading.value = value
+}
+
+provide(loadingKey, {loading: loading, updateLoading: updateLoading})
 
 </script>
 
