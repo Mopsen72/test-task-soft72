@@ -98,3 +98,11 @@ export interface IBookGoogleAPI {
         "textSnippet": string
     }
 }
+
+export interface IBook {
+    id: string,
+    title: string,
+    authors: string[],
+    publishedDate: string,
+    categories: string[]
+}
