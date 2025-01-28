@@ -16,6 +16,11 @@ const routes: RouteRecordRaw[] = [
                         path: ":bookId",
                         name: "books-id",
                         component: async () => import("../../pages/BookModalPage.vue")
+                    },
+                    {
+                        path: "edit/:bookId",
+                        name: "books-edit-id",
+                        component: async () => import("../../pages/BookEditModalPage.vue")
                     }
                 ]
             },

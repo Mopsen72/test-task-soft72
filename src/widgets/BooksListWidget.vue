@@ -1,6 +1,6 @@
 <template>
   <div class="relative">
-    <div class="flex justify-center items-center p-2 gap-4 bg-surface-800">
+    <div class="flex justify-center items-center p-2 gap-4 dark:bg-surface-800 bg-surface-100">
 
       <InputText :disabled="loading" :model-value="searchString" placeholder="Поиск"
                  @update:model-value="updateSearchStringHandler"></InputText>
